@@ -1,0 +1,10 @@
+        xml_rep = "<xml><ToUserName><![CDATA[%s]]></ToUserName><FromUserName><![CDATA[%s]]></FromUserName><CreateTime>%s</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[%s]]></Content><FuncFlag>0</FuncFlag></xml>"
+        response = make_response(xml_rep % (fromu,tou,str(int(time.time())), content))
+        response.content_type='application/xml'
+        
+        
+| hostname      | tigerinwood-test-3495276 |
+
+       Root User: tigerinwood
+   Database Name: c9
+   SHOW VARIABLES WHERE Variable_name = 'hostname'
